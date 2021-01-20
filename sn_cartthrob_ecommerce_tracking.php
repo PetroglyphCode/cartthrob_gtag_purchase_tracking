@@ -19,8 +19,8 @@
 	        'id': '{items_item_number}',
 	        'list_position': '{count}',
 	        'brand': '{items_manufacturer}',
-	        'category': '',
-	        'variant': '{condition}',
+	        'category': '', // Optional fields may be omitted or set to empty string.
+	        'variant': '',
 	        'quantity': {items_quantity},
 	        'price': '{exp:cartthrob:view_formatted_number number="{items_price}" prefix="" decimals="2" dec_point="." thousands_sep="" }'
 	       }{if count != total_results},{/if}{/exp:cartthrob:order_items}
